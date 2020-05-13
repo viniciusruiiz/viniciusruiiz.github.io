@@ -1,3 +1,15 @@
+document.addEventListener('scroll', function (event) {
+    var hT = $('.div-quemsomos').offset().top,
+    hH = $('.div-quemsomos').outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH)){
+        $('.header').addClass('bg-black')
+    } else {
+        $('.header').removeClass('bg-black')
+    }
+}, true);
+
 $('#ref-inicio').on('click', () => {
     window.scrollTo({top:0, behavior: "smooth"});
 })

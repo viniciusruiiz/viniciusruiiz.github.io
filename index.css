@@ -31,38 +31,47 @@ html {
   position: fixed;
   /* top: 100px; */
   min-height: 50px;
-  background-color: rgb(255, 255, 255, 0.3);
+  /* background-color: rgb(255, 255, 255, 0.3); */
   z-index: 100000;
+  transition: all .2s ease-in-out;
 }
 
-.logo {
+/* .logo {
   height: 100px;
   width: 100px;
-  /* margin: 10px; */
   float: left;
-}
+} */
 
 .header-itens {
   height: 100px;
   width: 100%;
+  text-align: center;
   /* margin: 10px 0; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
 }
 
 .header-item {
-  float: right;
-  font-size: 16px;
-  display: flex;
-  margin-top: 40px;
+  /* float: right; */
+  font-size: 24px;
+  /* display: flex; */
   text-decoration: none;
   color: black;
-  margin-right: 12px;
+  margin-right: 40px;
   transition: all .1s ease-in-out;
   cursor: pointer;
 }
 
+.bg-black {
+  color: white;
+  background-color: rgb(0, 0, 0, .5);
+}
+
 .header-item:hover {
-  font-size: 20px;
-  margin-top: 36px;
+  font-size: 28px;
+  /* margin-top: 36px; */
   text-decoration: none;
   color: black;
 }
